@@ -1,2 +1,5 @@
-# bookstore_data_exploration_r
-Exploración de datos de ventas de una librería en lenguaje R
+# Exploración de datos con R
+
+## Datasets
+
+	Baase de datos de ventas de una librería: "dataset/datos_ventas_libreria.csv"
