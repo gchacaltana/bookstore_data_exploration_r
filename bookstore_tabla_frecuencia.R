@@ -55,11 +55,11 @@ ageRangeTable
 # Gráfico de Barras
 barplot(
   ni, 
-  main="Distribución por rango de edades de los clientes", 
-  xlab="Rango Edad", 
-  ylab="Clientes", 
+  main = "Distribución por rango de edades de los clientes", 
+  xlab = "Rango Edad", 
+  ylab = "Clientes", 
   col = c("lightcyan", "mistyrose"),
-  beside=TRUE
+  legend = rownames(ni)
 )
 
 # Gráfico de sectores circulares
