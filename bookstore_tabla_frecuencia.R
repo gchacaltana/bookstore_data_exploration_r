@@ -41,9 +41,30 @@ fi <- prop.table(table(dataBookStore$RangoEdad))
 pi <- fi*100
 
 ageRangeTable <- t(rbind(ni,fi,pi))
+
+# Mostrando tabla de frecuencia
 ageRangeTable
 
 # Devuelve
 #         ni        fi       pi
 # Joven  3027 0.3027303 30.27303
 # Adulto 6972 0.6972697 69.72697
+
+# Visualizando distribución de la variable
+
+# Gráfico de Barras
+barplot(
+  ni, 
+  main="Distribución por rango de edades de los clientes", 
+  xlab="Rango Edad", 
+  ylab="Clientes", 
+  col = c("lightcyan", "mistyrose"),
+  beside=TRUE
+)
+
+# Gráfico de sectores circulares
+pie(
+  pi, 
+  main="Distribución por rango de edades de los clientes",
+  col = c("lightcyan", "mistyrose")
+)
