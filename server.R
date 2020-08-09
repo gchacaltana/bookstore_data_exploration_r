@@ -1,10 +1,12 @@
 library(shiny)
 
 dataset_path <- "datasets/datos_ventas_libreria.csv"
+data <- read.csv(dataset_path)
 stores = sort(unique(data$Tienda))
 categories = sort(unique(data$Categoria))
 
 shinyServer(function(input, output) {
+  
   data <- reactive({read.csv(dataset_path)})
   
   output$selectStores <- renderUI({
